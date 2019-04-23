@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="description" content="A site about citrus fruit" />
+	<meta name="keywords" content="citrus, fruit, grapefruit, lemon, lime, orange" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css">
+	<link rel="stylesheet" href="css/indexScreen.css" media="all"/>
+	<link rel="stylesheet" href="css/indexPrint.css" media="print"/>
+	<script src="js/index.js"></script>
+	<title>citrus</title>
+</head>
+<body onresize="displayDiv()">
+<header>
+<h1 class="citrusHeader">citrus</h1>
+</header>
+	<section class="topNavContainer">
+		<section class="menuSection">
+			<div id="main">
+					<span class="openMenu" onclick="openNav()" >&#9776; Menu</span>
+			</div>
+			<nav id="mySidenav" class="sidenav col-4 col-m-4">
+					<a href ="" class="closebtn" onclick="closeNav()">&times;</a>
+					<span>You found the hamburger menu</span>
+							<span class="smalltext">(Don&apos;t tell the vegetarians)</span>
+					<a href ="https://www.allrecipes.com/recipes/473/main-dish/burgers/hamburgers/">Recipes</a>
+					<a href ="https://duckduckgo.com/?q=hamburger&t=h_&iax=images&ia=images">Images</a>
+					<a href ="https://duckduckgo.com/?q=hamburger&t=h_&pn=1&ia=videos&iax=videos&iaxm=places">Locations</a>
+					<a href ="https://www.imdb.com/title/tt1561755/">Entertainment</a>   
+			</nav>
+			<div id="hiddenMain">
+					<span>&#9776; Menu</span>
+			</div>
+		</section>
+		<section class="citrus-bar">
+			<div class="citrusPadding"><br /></div>
+				<span>Pick your fruit</span>
+				<br />
+				<div class="col-3 col-m-3 citrusicon">
+					<input type="image" name="orange" id="orange" class="citrus" src="media/orange.png" alt="orange slice icon" onclick="showSection('orangeSection')">
+				</div>
+				<div class="col-3 col-m-3 citrusicon">
+					<input type="image" name="lemon" id="lemon" class="citrus" src="media/lemon.png" alt="lemon slice icon" onclick="showSection('lemonSection')">
+				</div>
+				<div class="col-3 col-m-3 citrusicon">
+					<input type="image" name="lime" id="lime" class="citrus " src="media/lime.png" alt="lime slice icon" onclick="showSection('limeSection')">
+				</div>
+				<div class="col-3 col-m-3 citrusicon">
+					<input type="image" name="grapefruit" id="grapefruit" class="citrus" src="media/grapefruit.png" alt="grapefruit slice icon" onclick="showSection('grapefruitSection')">
+				</div>
+		</section>
+		<div class="clear"></div>
+	</section>
+	<div class="clear col-5 col-m-8">
+		<h3 class="fruityh3">Enjoy your fruit</h3>
+			<section id="orangeSection" class="fruitSection col-6 col-m-12">
+			<img class="fruityBackground" alt="orange slice" src="media/orange4.jpg">
+			<p class="top-left">
+				Orange facts
+				<br />
+				The orange is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.  It is also called sweet orange, 
+				to distinguish it from the related Citrus × aurantium, referred to as bitter orange. 					 
+				<cite>Retrieved from https://en.wikipedia.org/wiki/Orange_(fruit) on April 19, 2019</cite>
+			</p>   
+		</section>
+		<section id="lemonSection" class="fruitSection col-6 col-m-12">
+				<img class="fruityBackground" alt="lemon slice" src="media/lemon4.jpg"> 
+			<p class="top-left">
+				Lemon facts
+				<br />
+				The lemon, Citrus limon (L.) Osbeck, is a species of small evergreen tree in the flowering plant 
+				family Rutaceae, native to South Asia, primarily North eastern India.
+				<cite>Retrieved from https://en.wikipedia.org/wiki/Lemon on April 19, 2019</cite>
+			</p>   
+		</section>  
+		<section id="limeSection" class="fruitSection col-6 col-m-12">
+			<img class="fruityBackground" alt="lime slice" src="media/lime4.jpg">
+			<p class="top-left">
+				Lime facts
+				<br />
+				A lime (from French lime, from Arabic līma, from Persian līmū, "lemon") is a 
+				citrus fruit, which is typically round, green in color, 3–6 centimetres (1.2–2.4 in) 
+				in diameter, and contains acidic juice vesicles.
+				<cite>Retrieved from https://en.wikipedia.org/wiki/Lime_(fruit) on April 19, 2019</cite>
+			</p>   				
+		</section>		
+		<section id="grapefruitSection" class="fruitSection col-6 col-m-12">
+			<img class="fruityBackground" alt="grapefruit slice" src="media/grapefruit4.jpg">
+			<p class="top-left grapefruit">
+				Grapefruit facts
+				<br />
+				The grapefruit (Citrus × paradisi) is a subtropical citrus tree known for 
+				its relatively large sour to semi-sweet, somewhat bitter fruit. Grapefruit 
+				is a citrus hybrid originating in Barbados...
+				<cite>Retrieved from https://en.wikipedia.org/wiki/Grapefruit on April 19, 2019</cite>
+			</p> 
+		</section>
+	</div>
+<footer class="col-6 col-m-12">
+		<div class="col-6 col-m-12 icon-bar">
+				<p>
+						<a href="https://tastesbetterfromscratch.com/citrus-fruit-salad/"><i class="far fa-lemon"></i></a>
+						<a href="https://in.pinterest.com/explore/citrus-trees/"><i class="fab fa-pinterest"></i></a>
+						<a href="https://www.youtube.com/watch?v=k-_g7mY49BI"><i class="fab fa-youtube"></i></a>
+						<a href="https://www.instagram.com/explore/tags/citrus/"><i class="fab fa-instagram"></i></a>
+				</p>
+		</div>
+		<p>&copy; Shayne Jones</p>
+	</footer>
+	<hr class="invisibleLine" />
+</body>
+</html>

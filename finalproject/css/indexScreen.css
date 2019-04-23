@@ -1,0 +1,388 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Lemonada');
+
+* {
+    box-sizing: border-box;
+}
+
+aside {
+    background: rgba(226, 224, 221, .7);
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1em;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+aside > img {
+    max-width: 181px;
+    padding: 5px 10px;
+}
+
+body {
+	font-family: Verdana, Geneva, Helvetica, Arial, sans-serif;
+	font-size: 1.2em;
+    background: whitesmoke;
+}
+
+cite {
+    font-size: .6em;
+}
+
+footer {
+    background-color: yellowgreen;
+    clear: both;
+    color: black;
+    text-align: right;
+    font-size: .7em;
+    padding: 15px;
+    opacity: .8;
+}
+
+header {
+    height: auto;
+    background-color: linen;
+    color: #eb4e39;
+    opacity: 0.8;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-family: Lemonada, cursive;
+    font-size: 2em;
+    color: #eb4e39;
+    text-shadow: 2px 2px greenyellow;
+}
+
+h2 {
+    font-family: Lemonada, cursive;
+    font-size: 1.7em;
+    color: #eb4e39;
+    text-shadow: 2px 2px greenyellow;
+}
+
+h3 {
+    font-family: Verdana, Geneva, Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+    color: #eb4e39;
+    text-shadow: 1px 1px greenyellow;
+}
+
+img {
+    max-width: 100%;
+}
+
+nav {
+	width: 100%;
+	height: auto;
+    background-color: rgb(250, 240, 230, .6);
+    text-align: left;
+    clear: both;
+    float: left;  
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul li {
+	list-style: none;
+	margin-left: -35px;
+	border-bottom: gray 2px solid;
+	border-left: gray 2px solid;
+}
+
+nav ul li a:link {
+    display: block;
+    background-color: white;
+    color: #3d1010;
+   	text-decoration: none;
+}
+
+nav ul li a:visited {
+    display: block;
+    background-color: white;
+    color: darkgreen;
+   	text-decoration: none;
+}
+
+nav ul li a:hover, nav ul li a:active {
+    display: block;
+    background-color: #3d1010;
+    color: linen;
+}
+
+section {
+    background: rgba(245, 245, 220, .8);
+    padding: 0px;
+    margin: 0px;
+}
+
+summary {
+	color: #3d1010;
+	text-shadow: 1px 1px greenyellow;
+	font-size: 1.1em;
+}
+
+.citrusHeader {
+    font-size: 3.5em; 
+    font-weight: bold; 
+    font-family: Lemonada, cursive;
+    text-shadow: 2px 2px greenyellow;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.clear {
+    clear: both;
+}
+
+.fruityh3 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.invisibleLine {
+    clear: both;
+    visibility: hidden;
+    height: 1px;
+}
+
+.topNavContainer {
+    text-align: center;
+    position: relative;
+}
+
+/* citrus menu */
+.citrus-bar {
+    max-height: 50px;
+    text-align: center;
+    font-size: 1.3em;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: inline-block;
+}
+
+.citrusicon {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: auto;
+    padding-left: auto;
+    text-align: center;
+}
+
+.citrus {
+    max-height: 50px;
+}
+
+.citrusPadding {
+    display: none;
+}
+
+/* end of citrus menu */
+
+.smalltext {
+ font-size: .7em;
+}
+
+/*  side menu */
+.menuSection{
+    display: inline-block;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.openMenu {
+    font-size: 30px; 
+    cursor: pointer;
+}
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: beige;
+    overflow-x: hidden;
+    overflow-y: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+}
+
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: black;
+	display: block;
+	transition: 0.1s;
+}
+
+.sidenav a:hover {
+    color: white;
+    background-image: linear-gradient(to top, orange, red, black);
+    cursor: pointer;
+    animation-name: heat;
+    animation-duration: .5s;
+  }
+
+  .sidenav a:active {
+    color: darkred;
+    text-decoration: underline;
+    background-color: beige;
+    cursor: pointer;
+  }
+
+  .sidenav a:visited {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+  }
+
+@keyframes heat {
+    0%   { transform: rotate(2deg);}
+    25%  { transform: rotate(-2deg);}
+    50%  { transform: rotate(2deg);}
+    75%  { transform: rotate(-2deg);}
+    100% { transform: rotate(0deg);}
+}
+
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+    margin-left: 50px;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+#hiddenMain {
+    padding: 5px;
+    display: none;
+}
+
+#main {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+	transition: margin-left .5s;
+	padding: 5px;
+}
+/* end of side menu */
+
+/* icon bar */
+.icon-bar {
+    overflow: none; 
+}
+
+.icon-bar a {
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    width: 15%;
+    margin-bottom: 5px;
+    padding: 5px 0px; /* Some top and bottom padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 36px; /* Increased font size */
+}
+
+.icon-bar a:hover {
+    transform: translateY(0%) translateY(-22%) scale(1.8, 1.8);
+    background-color: rgba(0,0,0,0);
+}
+/* ind of icon bar */
+
+/* fruit sections */
+.fruityBackground {
+    z-index: -1;
+    float: left;
+}
+
+.fruitSection {
+    background-color: none;
+    position: relative;
+}
+
+.grapefruit {
+    background-color: rgba(255, 255, 255, .6);
+}
+
+.top-left {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+  }
+
+#grapefruitSection {
+    display: none;
+}
+
+#lemonSection {
+    display: none;
+}
+
+#limeSection {
+    display: none;
+}
+
+#orangeSection {
+    display: inline-block;
+}
+/* end of fruit sections */
+
+@media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;} /* decreases padding-top for mobile */
+	.sidenav a {font-size: 18px;} /* decreases link font-size for mobile */
+    .citrusPadding {display: inline-block; visibility: hidden;}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%; /* this is being overridden in tablet and desktop */
+    float: left; /* setting defaults for everything including tablet and desktop */
+    padding: 15px; /* setting defaults for everything including tablet and desktop */
+}
+
+@media only screen and (min-width: 600px) {
+/* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+/* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    body {
+        max-width:1920px;
+    }
+}
